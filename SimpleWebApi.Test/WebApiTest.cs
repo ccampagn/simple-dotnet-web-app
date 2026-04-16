@@ -17,6 +17,8 @@ public class WebApiTest : IClassFixture<WebApplicationFactory<Program>>
     {
         // Arrange
         var client = _factory.CreateClient();
+        int a = 0;
+
 
         // Act
         var response = await client.GetAsync("/weatherforecast");
